@@ -10,8 +10,9 @@ Polymorphic and TypeSafe Tailwind UI library
   - Vue
   - Solid
   - Svelte
+- Lightweight
 - TypeSafe
 - Themable
 - Variants
 - Accessible
-- Component logic using state machine [Zag.js](https://zagjs.com/)
+- Component logic using state machines [Zag.js](https://zagjs.com/)
