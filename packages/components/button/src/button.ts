@@ -1,4 +1,4 @@
-import { cva, VariantProps } from 'class-variance-authority'
+import { cva, VariantProps } from '@pulse-ui/core'
 
 export type ButtonStyleProps = VariantProps<typeof button>
 

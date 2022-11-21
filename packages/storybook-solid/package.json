@@ -1,0 +1,21 @@
+{
+  "name": "storybook-solid",
+  "private": true,
+  "packageManager": "yarn@3.3.0",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@storybook/builder-vite": "^0.2.5",
+    "@storybook/html": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.3.0",
+    "solid-js": "^1.6.2",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.3",
+    "vite": "^3.2.4",
+    "vite-plugin-solid": "^2.4.0"
+  },
+  "scripts": {
+    "start": "start-storybook -p 7008",
+    "build-storybook": "build-storybook"
+  }
+}

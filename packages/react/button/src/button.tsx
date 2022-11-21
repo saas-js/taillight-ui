@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as pressable from '@zag-js/pressable'
 import { useMachine, normalizeProps } from '@zag-js/react'
 
-import { button, ButtonStyleProps } from '@pulse-ui/core'
+import { button, ButtonStyleProps } from '@pulse-ui/button'
 
 export interface ButtonProps
   extends ButtonStyleProps,

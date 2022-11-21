@@ -1,0 +1,20 @@
+{
+  "name": "@pulse/solid-button",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@pulse-ui/button": "workspace:*",
+    "@zag-js/pressable": "^0.3.2",
+    "@zag-js/solid": "^0.2.2"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.6.2"
+  },
+  "devDependencies": {
+    "solid-js": "^1.6.2",
+    "typescript": "^4.9.3"
+  }
+}

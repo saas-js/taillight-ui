@@ -1,0 +1,14 @@
+{
+  "name": "@pulse-ui/button",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@pulse-ui/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}

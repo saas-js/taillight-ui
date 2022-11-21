@@ -5,6 +5,16 @@ module.exports = {
     '../../react/**/*.stories.mdx',
     '../../react/**/*.stories.@(js|jsx|ts|tsx)',
   ],
+  refs: {
+    core: {
+      title: 'Core',
+      url: 'http://localhost:7006',
+    },
+    solid: {
+      title: 'Solid',
+      url: 'http://localhost:7008',
+    },
+  },
   staticDirs: ['../public'],
   addons: [
     '@storybook/addon-links',
@@ -21,28 +31,31 @@ module.exports = {
   ],
   framework: '@storybook/react',
   core: {
-    builder: '@storybook/builder-webpack5',
+    builder: '@storybook/builder-vite',
   },
-  webpackFinal: (config) => {
-    config.resolve.roots = [
-      path.resolve(__dirname, '../public'),
-      'node_modules',
-    ]
-
-    config.module.rules.push({
-      test: /\,css&/,
-      use: [
-        {
-          loader: 'postcss-loader',
-          options: {
-            ident: 'postcss',
-            plugins: [require('tailwindcss'), require('autoprefixer')],
-          },
-        },
-      ],
-      include: path.resolve(__dirname, '../../core'),
-    })
-
-    return config
+  features: {
+    storyStoreV7: true,
   },
+  // webpackFinal: (config) => {
+  //   config.resolve.roots = [
+  //     path.resolve(__dirname, '../public'),
+  //     'node_modules',
+  //   ]
+
+  //   config.module.rules.push({
+  //     test: /\,css&/,
+  //     use: [
+  //       {
+  //         loader: 'postcss-loader',
+  //         options: {
+  //           ident: 'postcss',
+  //           plugins: [require('tailwindcss'), require('autoprefixer')],
+  //         },
+  //       },
+  //     ],
+  //     include: path.resolve(__dirname, '../../core'),
+  //   })
+
+  //   return config
+  // },
 }

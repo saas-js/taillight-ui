@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from '@storybook/html'
 
-import { button } from './button'
+import { button } from '../src/button'
 
 export default {
   title: 'Core/Button',

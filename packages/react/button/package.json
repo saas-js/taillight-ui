@@ -1,12 +1,12 @@
 {
-  "name": "@pulse/react",
+  "name": "@pulse/react-button",
   "exports": {
     ".": {
       "default": "./src/index.ts"
     }
   },
   "dependencies": {
-    "@pulse-ui/core": "workspace:*",
+    "@pulse-ui/button": "workspace:*",
     "@zag-js/pressable": "^0.3.2",
     "@zag-js/react": "^0.2.2"
   },
