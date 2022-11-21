@@ -16,3 +16,31 @@ Polymorphic and TypeSafe Tailwind UI library
 - Variants
 - Accessible
 - Component logic using state machines [Zag.js](https://zagjs.com/)
+
+## Usage
+
+### Plain JS/TS
+
+```js
+import { button } from '@pulse-ui/button'
+
+const button = `<button class="${button({
+  intent: 'primary',
+})}">Click me</button>`
+```
+
+### React
+
+```jsx
+import { Button } from '@pulse-ui/react-button'
+
+const button = <Button intent="primary">Click me</Button>
+```
+
+### Solid
+
+```jsx
+import { Button } from '@pulse-ui/solid-button'
+
+const button = <Button intent="primary">Click me</Button>
+```
