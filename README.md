@@ -1,4 +1,4 @@
-# Pulse
+# Pulse UI
 
 Polymorphic and TypeSafe Tailwind UI library
 
