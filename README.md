@@ -1,6 +1,6 @@
-# Pulse UI
+# Taillight UI
 
-Polymorphic and TypeSafe Tailwind UI library
+A modern, type-safe and cross framework UI library
 
 ## Features
 
@@ -9,38 +9,37 @@ Polymorphic and TypeSafe Tailwind UI library
   - React
   - Vue
   - Solid
-  - Svelte
+- Zero-runtime CSS engine (PandaCSS, supports RSC)
 - Lightweight
 - TypeSafe
 - Themable
 - Variants
 - Accessible
-- Component logic using state machines [Zag.js](https://zagjs.com/)
 
 ## Usage
 
 ### Plain JS/TS
 
 ```js
-import { button } from '@pulse-ui/button'
+import { button } from 'taillight'
 
 const button = `<button class="${button({
-  intent: 'primary',
+  variant: 'primary',
 })}">Click me</button>`
 ```
 
 ### React
 
 ```jsx
-import { Button } from '@pulse-ui/react-button'
+import { Button } from '@taillight-ui/react'
 
-const button = <Button intent="primary">Click me</Button>
+const button = <Button variant="primary">Click me</Button>
 ```
 
 ### Solid
 
 ```jsx
-import { Button } from '@pulse-ui/solid-button'
+import { Button } from '@taillight-ui/solid'
 
-const button = <Button intent="primary">Click me</Button>
+const button = <Button variant="primary">Click me</Button>
 ```
